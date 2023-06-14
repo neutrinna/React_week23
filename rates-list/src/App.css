@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  width: 70vw;
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+  padding-top: 10vh;
+
+  background-color: rgb(250, 250, 250);
+}

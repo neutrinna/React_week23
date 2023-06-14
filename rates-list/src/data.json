@@ -1,0 +1,27 @@
+[
+    {
+        "price": 300,
+        "speed": 10,
+        "backgroundDark": "rgb(34, 156, 171)",
+        "backgroundLight": "rgb(44, 193, 213)"
+    },
+    {
+        "price": 450,
+        "speed": 50,
+        "backgroundDark": "rgb(31, 137, 114)",
+        "backgroundLight": "rgb(36, 174, 141)"
+    },
+    {
+        "price": 550,
+        "speed": 100,
+        "backgroundDark": "rgb(196, 85, 78)",
+        "backgroundLight": "rgb(244, 106, 95)",
+        "selected": true
+    },
+    {
+        "price": 1000,
+        "speed": 200,
+        "backgroundDark": "rgb(40, 47, 55)",
+        "backgroundLight": "rgb(50, 57, 68)"
+    }
+]

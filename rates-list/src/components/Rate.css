@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Roboto&family=Source+Sans+3&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Rate{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1.5fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1px;
+
+    width: calc(25% - 1px);
+    height: 35vh;
+    border: 1px solid white;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.title,
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+.title{
+    font-size: calc( 100vw / 64);
+}
+.price__container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    height: 50%;
+}
+
+.price__container span {
+    font-size: calc(( 100vw + 960px ) / 64);
+}
+
+.currency {
+    align-self: flex-start;
+}
+
+.speed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(247, 247, 247);
+}
+
+.defoult-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(238, 238, 238);
+}
+
+.speed,
+.defoult-text {
+    line-height: 170%;
+    color: RGB(105, 105, 109);
+}
+
+.selected {
+    margin-top: -1%;
+    height: 38vh;
+}
