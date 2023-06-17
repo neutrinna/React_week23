@@ -1,4 +1,4 @@
-import './Rate.css';
+import style from './Rate.module.css';
 
 function Rate(props) {
   const backgroundDark = {
@@ -13,17 +13,17 @@ function Rate(props) {
   
 
   return (
-    <section className={`Rate ${selectedStyle}`}>
-      <h2 className="title" style={backgroundDark}>
+    <section className={`${style.Rate} ${selectedStyle}`}>
+      <h2 className={style.title} style={backgroundDark}>
         Безлимитный {props.price}
       </h2>
-      <div className="price" style={backgroundLight}>
-        <div className="price__container">
-          <div className="currency">руб</div> <span>{props.price}</span>/мес
+      <div className={style.price} style={backgroundLight}>
+        <div className={style.price__container}>
+          <div className={style.currency}>руб</div> <span>{props.price}</span>/мес
         </div>
       </div>
-      <div className="speed">до {props.speed} МБит/сек</div>
-      <div className="defoult-text">
+      <div className={style.speed}>до {props.speed} МБит/сек</div>
+      <div className={style.defoult_text}>
         Oбъем включенного <br />
         трафика не ограничен
       </div>

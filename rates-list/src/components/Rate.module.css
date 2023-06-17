@@ -58,7 +58,7 @@
     background-color: rgb(247, 247, 247);
 }
 
-.defoult-text{
+.defoult_text{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +67,7 @@
 }
 
 .speed,
-.defoult-text {
+.defoult_text {
     line-height: 170%;
     color: RGB(105, 105, 109);
 }
