@@ -1,3 +1,6 @@
+import { logDOM } from '@testing-library/react';
+import React, {useState} from 'react';
+
 import style from './Rate.module.css';
 
 function Rate(props) {
@@ -7,13 +10,13 @@ function Rate(props) {
   const backgroundLight = {
     backgroundColor: props.backgroundLight,
   };
-  const selected = props.selected;
-  let selectedStyle;
-  selected && (selectedStyle = 'selected');
-  
+  const [selectedItem, setSelectedItem] = useState('');
 
   return (
-    <section className={`${style.Rate} ${selectedStyle}`}>
+    <section onClick={()=>{
+      setSelectedItem( selectedItem ? '' :'selected');
+      console.log(selectedItem);
+    }} className={`${style.Rate} ${selectedItem}`}>
       <h2 className={style.title} style={backgroundDark}>
         Безлимитный {props.price}
       </h2>

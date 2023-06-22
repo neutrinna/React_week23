@@ -15,8 +15,7 @@
         "price": 550,
         "speed": 100,
         "backgroundDark": "rgb(196, 85, 78)",
-        "backgroundLight": "rgb(244, 106, 95)",
-        "selected": true
+        "backgroundLight": "rgb(244, 106, 95)"
     },
     {
         "price": 1000,
