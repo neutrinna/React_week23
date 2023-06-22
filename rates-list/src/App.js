@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       {data.map((element, index) => {
         return (
-          <Rate key={index} {...element}></Rate>
+          <Rate key={index} {...element}/>
         );
       })}
     </div>

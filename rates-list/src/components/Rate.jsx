@@ -1,7 +1,6 @@
-import { logDOM } from '@testing-library/react';
 import React, {useState} from 'react';
 
-import style from './Rate.module.css';
+import './Rate.css';
 
 function Rate(props) {
   const backgroundDark = {
@@ -12,21 +11,22 @@ function Rate(props) {
   };
   const [selectedItem, setSelectedItem] = useState('');
 
+  function handleChange(){
+    setSelectedItem( selectedItem ? '' :'selected');
+  }
+
   return (
-    <section onClick={()=>{
-      setSelectedItem( selectedItem ? '' :'selected');
-      console.log(selectedItem);
-    }} className={`${style.Rate} ${selectedItem}`}>
-      <h2 className={style.title} style={backgroundDark}>
+    <section onClick={handleChange} className={`Rate ${selectedItem}`}>
+      <h2 className="title" style={backgroundDark}>
         Безлимитный {props.price}
       </h2>
-      <div className={style.price} style={backgroundLight}>
-        <div className={style.price__container}>
-          <div className={style.currency}>руб</div> <span>{props.price}</span>/мес
+      <div className="price" style={backgroundLight}>
+        <div className="price__container">
+          <div className="currency">руб</div> <span>{props.price}</span>/мес
         </div>
       </div>
-      <div className={style.speed}>до {props.speed} МБит/сек</div>
-      <div className={style.defoult_text}>
+      <div className="speed">до {props.speed} МБит/сек</div>
+      <div className="defoult_text">
         Oбъем включенного <br />
         трафика не ограничен
       </div>
