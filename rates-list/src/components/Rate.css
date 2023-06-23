@@ -73,6 +73,5 @@
 }
 
 .selected {
-    margin-top: -1%;
-    height: 38vh;
+    transform: scale(1.05);
 }
